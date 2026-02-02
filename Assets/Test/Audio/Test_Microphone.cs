@@ -2,46 +2,50 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Test_Microphone : MonoBehaviour
+namespace Test
 {
-    public AudioSource audioSource;
-    public AudioClip audioClip;
-
-    private string audioClipStr = "Built-in Microphone";
-    // Start is called before the first frame update
-    void Start()
+    public class Test_Microphone : MonoBehaviour
     {
-        var devices = Microphone.devices;
-        if (devices.Length <= 0)
-        {
-            return;
-        }
-        audioClipStr = devices[0];
-        // audioSource.clip = Microphone.Start(audioClipStr, true, 10, 44100);
-        // audioSource.Play();
-    }
+        public AudioSource audioSource;
+        public AudioClip audioClip;
 
-    public void OnGUI()
-    {
-        if (GUILayout.Button("开始录音"))
+        private string audioClipStr = "Built-in Microphone";
+        // Start is called before the first frame update
+        void Start()
         {
-            audioClip = Microphone.Start(audioClipStr, true, 10, 44100);
-        }
-        if (GUILayout.Button("结束录音"))
-        {
-            if (audioClip)
+            var devices = Microphone.devices;
+            if (devices.Length <= 0)
             {
-                Microphone.End(audioClipStr);
+                return;
+            }
+            audioClipStr = devices[0];
+            // audioSource.clip = Microphone.Start(audioClipStr, true, 10, 44100);
+            // audioSource.Play();
+        }
+
+        public void OnGUI()
+        {
+            if (GUILayout.Button("开始录音"))
+            {
+                audioClip = Microphone.Start(audioClipStr, true, 10, 44100);
+            }
+            if (GUILayout.Button("结束录音"))
+            {
+                if (audioClip)
+                {
+                    Microphone.End(audioClipStr);
+                }
+            }
+
+            if (GUILayout.Button("播放录音"))
+            {
+                if (audioClip)
+                {
+                    audioSource.clip = audioClip;
+                    audioSource.Play();
+                }
             }
         }
-
-        if (GUILayout.Button("播放录音"))
-        {
-            if (audioClip)
-            {
-                audioSource.clip = audioClip;
-                audioSource.Play();
-            }
-        }
     }
+
 }

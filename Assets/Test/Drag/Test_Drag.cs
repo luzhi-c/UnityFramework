@@ -3,39 +3,43 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class Test_Drag : MonoBehaviour, IPointerDownHandler, IPointerMoveHandler, IPointerUpHandler
+namespace Test
 {
-    public GameObject target;
-    private bool isTouch;
-
-    public void OnPointerDown(PointerEventData eventData)
+    public class Test_Drag : MonoBehaviour, IPointerDownHandler, IPointerMoveHandler, IPointerUpHandler
     {
-        isTouch = true;
-    }
+        public GameObject target;
+        private bool isTouch;
 
-    public void OnPointerMove(PointerEventData eventData)
-    {
-        if (!isTouch)
+        public void OnPointerDown(PointerEventData eventData)
         {
-            return;
+            isTouch = true;
         }
-        target.transform.position = eventData.position;
+
+        public void OnPointerMove(PointerEventData eventData)
+        {
+            if (!isTouch)
+            {
+                return;
+            }
+            target.transform.position = eventData.position;
+        }
+
+        public void OnPointerUp(PointerEventData eventData)
+        {
+            isTouch = false;
+        }
+
+        // Start is called before the first frame update
+        void Start()
+        {
+
+        }
+
+        // Update is called once per frame
+        void Update()
+        {
+
+        }
     }
 
-    public void OnPointerUp(PointerEventData eventData)
-    {
-        isTouch = false;
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
 }

@@ -15,25 +15,25 @@ public class PrefabChildViewerEditor : Editor
     public override void OnInspectorGUI()
     {
         // 先绘制默认的Inspector内容
-        DrawDefaultInspector();
+        // DrawDefaultInspector();
 
-        GameObject targetObject = (GameObject)target;
+        // GameObject targetObject = (GameObject)target;
 
-        // 检查是否是Prefab实例或Prefab资源
-        bool isPrefabInstance = PrefabUtility.IsPartOfAnyPrefab(targetObject);
-        bool isPrefabAsset = PrefabUtility.IsPartOfPrefabAsset(targetObject);
+        // // 检查是否是Prefab实例或Prefab资源
+        // bool isPrefabInstance = PrefabUtility.IsPartOfAnyPrefab(targetObject);
+        // bool isPrefabAsset = PrefabUtility.IsPartOfPrefabAsset(targetObject);
 
-        if (isPrefabInstance || isPrefabAsset)
-        {
-            EditorGUILayout.Space();
-            EditorGUILayout.LabelField("Prefab Tools", EditorStyles.boldLabel);
+        // if (isPrefabInstance || isPrefabAsset)
+        // {
+        //     EditorGUILayout.Space();
+        //     EditorGUILayout.LabelField("Prefab Tools", EditorStyles.boldLabel);
 
-            if (GUILayout.Button("遍历子节点"))
-            {
-                Generator(targetObject);
-            }
+        //     if (GUILayout.Button("遍历子节点"))
+        //     {
+        //         Generator(targetObject);
+        //     }
 
-        }
+        // }
     }
 
     void Generator(GameObject prefab)

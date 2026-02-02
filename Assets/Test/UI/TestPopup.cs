@@ -4,15 +4,19 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityGameFramework.Runtime;
 
-public class TestPopup : PopupViewMediator
+namespace Test
 {
-    public override void OnInit(object data)
+    public class TestPopup : PopupViewMediator
     {
-        Debug.Log(data);
-        var btn = transform.Find("btnClose");
-        if (btn)
+        public override void OnInit(object data)
         {
-            btn.GetComponent<Button>().onClick.AddListener(OnTouchMaskLayer);
+            Debug.Log(data);
+            var btn = transform.Find("btnClose");
+            if (btn)
+            {
+                btn.GetComponent<Button>().onClick.AddListener(OnTouchMaskLayer);
+            }
         }
     }
 }
+
