@@ -30,7 +30,7 @@ namespace Test
         {
 
             Ray mouseRay = Camera.main.ScreenPointToRay(Input.mousePosition);
-            if (Physics.Raycast(mouseRay.origin, mouseRay.direction, out RaycastHit hitInfo, 100f, LayerMask.NameToLayer("Plane")))
+            if (Physics.Raycast(mouseRay.origin, mouseRay.direction, out RaycastHit hitInfo, 100f))
             {
                 Vector3 position = hitInfo.point;
                 mousePosition = new Vector2(position.x, position.z);

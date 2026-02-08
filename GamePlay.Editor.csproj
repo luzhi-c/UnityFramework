@@ -64,9 +64,7 @@
     <Analyzer Include="E:\UnityEditor\2022.3.62f3c1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Editor\GamePlay\PrefabChildViewerEditor.cs" />
     <Compile Include="Assets\Editor\GamePlay\CopyHyBridCLRDLLs.cs" />
-    <Compile Include="Assets\Editor\GamePlay\AutoUICreator.cs" />
     <Compile Include="Assets\Editor\GamePlay\CocosToUnityAtlasConverter.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -421,6 +419,10 @@
       <HintPath>E:\UnityEditor\2022.3.62f3c1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="ExtractorSharp.Component">
+      <HintPath>Assets\Plugins\ExtractorSharp\ExtractorSharp.Component.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.VisualScripting.YamlDotNet">
       <HintPath>Library\PackageCache\com.unity.visualscripting@1.9.4\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll</HintPath>
       <Private>False</Private>
@@ -465,6 +467,10 @@
       <HintPath>Library\PackageCache\com.code-philosophy.hybridclr@4df417e56a\Plugins\dnlib.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="ExtractorSharp.Core">
+      <HintPath>Assets\Plugins\ExtractorSharp\ExtractorSharp.Core.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="DOTween46">
       <HintPath>Assets\Plugins\DOTween\DOTween46.dll</HintPath>
       <Private>False</Private>
@@ -475,6 +481,10 @@
     </Reference>
     <Reference Include="LZ4">
       <HintPath>Library\PackageCache\com.code-philosophy.hybridclr@4df417e56a\Plugins\LZ4.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="ExtractorSharp.Json">
+      <HintPath>Assets\Plugins\ExtractorSharp\ExtractorSharp.Json.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.VisualScripting.TextureAssets">
@@ -1007,6 +1017,10 @@
     </Reference>
     <Reference Include="System.Xml.XPath.XDocument">
       <HintPath>E:\UnityEditor\2022.3.62f3c1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Xml.XPath.XDocument.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="HybridCLR.Runtime">
+      <HintPath>Library\ScriptAssemblies\HybridCLR.Runtime.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEditor.UI">

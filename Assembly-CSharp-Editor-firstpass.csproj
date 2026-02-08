@@ -1170,10 +1170,11 @@
     <ProjectReference Include="spine-unity.csproj" />
     <ProjectReference Include="UnityGameFramework.Editor.csproj" />
     <ProjectReference Include="spine-unity-examples.csproj" />
-    <ProjectReference Include="UnityGameFramework.Runtime.csproj" />
-    <ProjectReference Include="spine-unity-examples-editor.csproj" />
-    <ProjectReference Include="spine-unity-editor.csproj" />
+    <ProjectReference Include="GamePlay.Game.csproj" />
     <ProjectReference Include="RVO2.csproj" />
+    <ProjectReference Include="UnityGameFramework.Runtime.csproj" />
+    <ProjectReference Include="spine-unity-editor.csproj" />
+    <ProjectReference Include="spine-unity-examples-editor.csproj" />
     <ProjectReference Include="Luban.csproj" />
   </ItemGroup>
   <Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />

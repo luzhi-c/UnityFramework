@@ -51,8 +51,8 @@ MonoBehaviour:
       AssetTags: 
       ActiveRuleName: EnableGroup
       Collectors:
-      - CollectPath: Assets/Res
-        CollectorGUID: 08c9fb92df68a484e9b1559fe5a95240
+      - CollectPath: Assets/Res/UI
+        CollectorGUID: 05c6f6f839650054d83a21185121c544
         CollectorType: 0
         AddressRuleName: AddressByFileName
         PackRuleName: PackDirectory
@@ -67,13 +67,21 @@ MonoBehaviour:
         FilterRuleName: CollectPrefab
         AssetTags: 
         UserData: 
+      - CollectPath: Assets/Res/NPK
+        CollectorGUID: 1ebe8f2e33d77a740b39b822ef56dd5a
+        CollectorType: 0
+        AddressRuleName: AddressByFileName
+        PackRuleName: PackDirectory
+        FilterRuleName: CollectAll
+        AssetTags: 
+        UserData: 
     - GroupName: Json
       GroupDesc: "\u914D\u7F6E"
       AssetTags: 
       ActiveRuleName: EnableGroup
       Collectors:
-      - CollectPath: Assets/Config
-        CollectorGUID: abd1537d48350094db263db7c1a8ec9d
+      - CollectPath: Assets/GameMain/LubanData
+        CollectorGUID: c56bf3964d36f1a4c882493448398388
         CollectorType: 0
         AddressRuleName: AddressByFileName
         PackRuleName: PackDirectory

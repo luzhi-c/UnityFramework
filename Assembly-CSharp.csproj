@@ -64,25 +64,7 @@
     <Analyzer Include="E:\UnityEditor\2022.3.62f3c1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\GameMain\GamePlay\Scripts\_Auto\PatchViewMediator.cs" />
-    <Compile Include="Assets\Test\RichText\RichTextTyper.cs" />
-    <Compile Include="Assets\Test\RVO2\ObstacleCollect.cs" />
-    <Compile Include="Assets\Test\UI\Test_UI.cs" />
-    <Compile Include="Assets\Test\UI\TestPopup.cs" />
-    <Compile Include="Assets\Test\Guide\GuideMaskController.cs" />
-    <Compile Include="Assets\Test\Drag\TestGame.cs" />
-    <Compile Include="Assets\Test\Audio\Test_PlayAuido.cs" />
-    <Compile Include="Assets\Test\Spine\Test_Spine.cs" />
-    <Compile Include="Assets\Test\Audio\Test_Microphone.cs" />
     <Compile Include="Assets\GameMain\View\TestImage.cs" />
-    <Compile Include="Assets\Test\Drag\TestItem.cs" />
-    <Compile Include="Assets\Test\SpriteSheet\Test_SpriteSheet.cs" />
-    <Compile Include="Assets\Test\Drag\Test_Drag.cs" />
-    <Compile Include="Assets\Test\Tween\TestTween.cs" />
-    <Compile Include="Assets\Test\RVO2\GameAgent.cs" />
-    <Compile Include="Assets\Test\Guide\Test_GuideLayer.cs" />
-    <Compile Include="Assets\Test\RVO2\RVO2Manager.cs" />
-    <Compile Include="Assets\Test\NavMesh\Script_09_06.cs" />
     <Compile Include="Assets\HybridCLRGenerate\AOTGenericReferences.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -92,7 +74,6 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
-    <None Include="Assets\Test\Guide\Default_Mask.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
@@ -1145,10 +1126,11 @@
     <ProjectReference Include="spine-unity.csproj" />
     <ProjectReference Include="UnityGameFramework.Editor.csproj" />
     <ProjectReference Include="spine-unity-examples.csproj" />
-    <ProjectReference Include="UnityGameFramework.Runtime.csproj" />
-    <ProjectReference Include="spine-unity-examples-editor.csproj" />
-    <ProjectReference Include="spine-unity-editor.csproj" />
+    <ProjectReference Include="GamePlay.Game.csproj" />
     <ProjectReference Include="RVO2.csproj" />
+    <ProjectReference Include="UnityGameFramework.Runtime.csproj" />
+    <ProjectReference Include="spine-unity-editor.csproj" />
+    <ProjectReference Include="spine-unity-examples-editor.csproj" />
     <ProjectReference Include="Luban.csproj" />
   </ItemGroup>
   <Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />

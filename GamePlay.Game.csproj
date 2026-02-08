@@ -70,16 +70,28 @@
     <Compile Include="Assets\GameMain\Scripts\GamePlay\RedDot\RedDotManager.cs" />
     <Compile Include="Assets\GameMain\Scripts\GamePlay\Buff\Buff.cs" />
     <Compile Include="Assets\GameMain\Scripts\LubanCode\NewItem.cs" />
+    <Compile Include="Assets\GameMain\Scripts\GamePlay\DFQ\Entity\IEntity.cs" />
+    <Compile Include="Assets\GameMain\Scripts\GamePlay\DFQ\World.cs" />
     <Compile Include="Assets\GameMain\Scripts\GamePlay\RedDot\RedDotComponent.cs" />
+    <Compile Include="Assets\GameMain\Scripts\GamePlay\DFQ\GL\IGL.cs" />
     <Compile Include="Assets\GameMain\Scripts\GameEntry.cs" />
+    <Compile Include="Assets\GameMain\Scripts\GamePlay\DFQ\Collider\Rect.cs" />
     <Compile Include="Assets\GameMain\Scripts\Test.cs" />
+    <Compile Include="Assets\GameMain\Scripts\GamePlay\DFQ\Collider\Collider.cs" />
+    <Compile Include="Assets\GameMain\Scripts\GamePlay\DFQ\Collider\ColliderResult.cs" />
+    <Compile Include="Assets\GameMain\Scripts\GamePlay\DFQ\Collider\SolidRect.cs" />
     <Compile Include="Assets\GameMain\Scripts\GamePlay\RedDot\RedDotArgs.cs" />
+    <Compile Include="Assets\GameMain\Scripts\GamePlay\Tools\Tools.cs" />
     <Compile Include="Assets\GameMain\Scripts\GamePlay\RedDot\IRedDot.cs" />
+    <Compile Include="Assets\GameMain\Scripts\GamePlay\DFQ\Component\InputComponent.cs" />
     <Compile Include="Assets\GameMain\Scripts\LubanCode\Item.cs" />
+    <Compile Include="Assets\GameMain\Scripts\GamePlay\DFQ\Component\IComponent.cs" />
     <Compile Include="Assets\GameMain\Scripts\GamePlay\RedDot\RedDot.cs" />
     <Compile Include="Assets\GameMain\Scripts\GamePlay\RedDot\IRedDotManager.cs" />
     <Compile Include="Assets\GameMain\Scripts\GamePlay\Buff\IBuff.cs" />
+    <Compile Include="Assets\GameMain\Scripts\GamePlay\DFQ\Entity\Entity.cs" />
     <Compile Include="Assets\GameMain\Scripts\LubanCode\TbItem.cs" />
+    <Compile Include="Assets\GameMain\Scripts\GamePlay\DFQ\Component\TransformComponent.cs" />
     <Compile Include="Assets\GameMain\Scripts\GamePlay\Yooassets\YooassetsILoadResourceAgentHelper.cs" />
   </ItemGroup>
   <ItemGroup>
